@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 .container{
-  height: 100vh;
-  width: 100%;
+  height: infinite;
+  width: infinite;
   background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
   background-size: 300% 300%;
   animation: color 12s ease-in-out infinite;
