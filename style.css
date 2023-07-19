@@ -66,6 +66,7 @@ button{
   color: white;
   font-family: verdana;
   border: snow;
+  border-radius: 5px;
 }
 button:hover{
   background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
