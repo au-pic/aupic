@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-.container{
+.bg{
   height: infinite;
   width: infinite;
   background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
@@ -24,13 +24,66 @@
 }
 
 
-
-
-
 body {
   margin: 0;
   font-family: verdana;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 30px;
 }
+img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+}
+.row{
+  display: flex;
+  gap: 15px;
+}
+.gallery{
+  display: flex;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+button{
+  padding: 15px 50px;
+  background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;  
+  color: white;
+}
+button:hover{
+  background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:750px){
+  .row{
+    flex-direction: column;
+  }
+}
+
+
+
+
 
 .topnav {
   overflow: hidden;
@@ -69,20 +122,4 @@ body {
   color: white;
 }
 
-/*Column and Rows*/
-             * {
-                 box-sizing: border-box;
-             }
 
-             .column {
-                 float: left;
-                 width: 30%;
-                 padding: 1px;
-             }
-
-/* Clearfix (clear floats) */
-             .row::after {
-                 content: "";
-                 clear: both;
-                 display: table;
-             }
