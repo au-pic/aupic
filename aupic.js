@@ -1,11 +1,9 @@
 function openNav() {
-  document.getElementById("myTopnav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("myTopnav").style.width = "100%";
 }
 
 function closeNav() {
-  document.getElementById("myTopnav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("myTopnav").style.width = "0%";
 }
 
 
