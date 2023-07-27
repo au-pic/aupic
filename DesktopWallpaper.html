@@ -10,29 +10,39 @@
     </head>
     <body>
         <div class="container">
-        <header><meta name="viewport" content="width=device-width, initial-scale=1.0"><a href="https://au-pic.github.io/aupic/index.html"><center><button><h1 style="font-family:verdana">AuPic</h1></button></center></a></header>
+        <header><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo"><a href="https://au-pic.github.io/aupic/index.html"><button><h1 style="font-family:verdana">AuPic</h1></button></a></div>
 
-                    
-            <div class="topnav" id="myTopnav">
-                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                 <div class="overlay-content">
-                     <a href="index.html">Home</a>
-                     <a href="MobileWallpaper.html">Mobile Wallpapers</a>
-                     <a class="active" href="DesktopWallpaper.html">PC/Laptop/Tab Wallpapers</a>
-                     <a href="Audio.html">Audio</a>
-                     <a href="PrivacyPolicy.html">Privacy Policy</a>
-                     <a href="AboutUs.html">About Us</a>
-                     <a href="ContactUs.html">Contact Us</a>
-                 </div>
-                 
-            </div>  
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
 
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>           
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="MobileWallpaper.html">Mobile Wallpapers</a></li>
+        <li><a class="active" href="DesktopWallpaper.html">Desktop Wallpapers</a></li>
+        <li><a href="Audio.html">Audio</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+      </div>
+    </ul>
+    </nav>
+    </header>
+
+
         
-
-        <div class="container"> 
+        <div>
+            <div class="container"> 
              <div class="row">
-                 <div class="col">
+                 <div class="col"> 
                      <img src="https://lh3.googleusercontent.com/u/5/drive-viewer/AITFw-wTf-9y0XOBniyjfPZLeIwwYSqikGgqeAp1nK_Vjx7omhvNZVzkNRdfSJe8tdUyVQ8xQoskrPnjrxPPJ_V7QrZ7ai-8=w1227-h657">
                      <a href="https://drive.google.com/file/d/1EwKvOdKYjnTL2wH3kTpNKNh4AtB2YjBL/view?usp=sharing" target="_blank"><button>DOWNLOAD</button></a>
                      <img src="https://lh3.googleusercontent.com/u/5/drive-viewer/AITFw-z4tebqGeNS1FCLxkvWNbQ-HwU-mVpjIkz94EJ1OMStjyRt5rjU5fiLzf7NS2Lxws6y4zIGIsDid55y_NwauGd1yPvx=w1210-h657">
@@ -114,7 +124,19 @@
                      <a href="" target="_blank"><button>DOWNLOAD</button></a>
                  </div>
              </div>                   
-        </div>    
+        </div> 
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#myinput").on("keyup",function(){
+    var value = $(this).val().toLowerCase();
+    $("#card div").filter(function(){
+        $(this).toggle($(this).text().toLowerCase().indexof(value) > -1);
+
+    });
+    });
+});
+</script>
+
 
 
 
